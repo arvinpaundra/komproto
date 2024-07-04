@@ -1,4 +1,4 @@
-module komproto
+module github.com/arvinpaundra/komproto
 
 go 1.20
 
