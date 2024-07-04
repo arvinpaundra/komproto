@@ -1,0 +1,15 @@
+syntax="proto3";
+
+package ping;
+
+option go_package="komproto/log/ping";
+
+import "google/protobuf/empty.proto";
+
+message PingResponse {
+  string status = 1;
+}
+
+service PingService {
+  rpc Ping(google.protobuf.Empty) returns (PingResponse) {};
+}
